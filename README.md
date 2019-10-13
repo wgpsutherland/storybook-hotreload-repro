@@ -1,9 +1,11 @@
 Storybook Hot Reload Issue Reproduction
 =========
 
+Issue: https://github.com/storybookjs/storybook/issues/8306
+
 Run app: `npm start`
 
-Run stroybook: `npm run storybook`
+Run storybook: `npm run storybook`
 
 How to reproduce:
 
