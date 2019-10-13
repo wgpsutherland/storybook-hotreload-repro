@@ -11,14 +11,8 @@ export default {
 
 let completeTodo: ITodo = {
     id: "1234",
-    name: "Hello",
+    name: "Hello!",
     complete: true
-}
-
-let incompleteTodo: ITodo = {
-    id: "1234",
-    name: "Hello good sir!!!",
-    complete: false
 }
 
 const withCardGroup = (storyFn: any) => <Grid.Column>
@@ -28,9 +22,7 @@ const withCardGroup = (storyFn: any) => <Grid.Column>
 </Grid.Column>
 
 const complete = () => <TodoCard todo={completeTodo} />
-const incomplete = () => <TodoCard todo={incompleteTodo} />
 
 storiesOf('TodoCard', module)
     .addDecorator(withCardGroup)
     .add('complete', complete)
-    .add('incomplete', incomplete)
